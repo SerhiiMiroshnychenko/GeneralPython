@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Шляхи до файлів
-uniq_file_path = "/home/smiroshnychenko/Runex3/data/products/uniq.csv"
-bom_file_path = "/home/smiroshnychenko/Runex3/data/bom/product.template (3).csv"
+uniq_file_path = "uniq.csv"
+bom_file_path = "product.template (3).csv"
 
 # Зчитуємо DataFrame з файлів
 uniq_df = pd.read_csv(uniq_file_path)
@@ -12,6 +12,6 @@ bom_df = pd.read_csv(bom_file_path)
 result_df = bom_df[bom_df['default_code'].isin(uniq_df['default_code'])]
 
 # Записуємо результат у файл "result_bom.csv"
-result_df.to_csv("/home/smiroshnychenko/Runex3/data/bom/result_bom.csv", index=False)
+result_df.to_csv("result_bom.csv", index=False)
 
 print("Results have been written to 'result_bom.csv'.")
