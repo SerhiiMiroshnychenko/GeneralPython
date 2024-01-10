@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Шляхи до файлів
-bom_file_path = "/home/smiroshnychenko/Runex3/data/bom/bom.csv"
-mrp_bom_file_path = "/home/smiroshnychenko/Runex3/data/bom/mrp.bom.csv"
+bom_file_path = "bom.csv"
+mrp_bom_file_path = "mrp.bom.csv"
 
 # Зчитуємо DataFrames з файлів
 bom_df = pd.read_csv(bom_file_path)
@@ -20,6 +20,6 @@ selected_columns = ["id_x", "name_x", "type", "product_efficiency", "product_tmp
 res_bom_df.columns = selected_columns
 
 # Записуємо результат у файл "res_bom.csv"
-res_bom_df.to_csv("/home/smiroshnychenko/Runex3/data/bom/res_bom.csv", index=False)
+res_bom_df.to_csv("res_bom.csv", index=False)
 
 print("Results have been written to 'res_bom.csv'.")
