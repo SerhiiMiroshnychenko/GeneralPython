@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до файлу
-file_path = "/home/smiroshnychenko/Runex3/data/company/Contact (res.partner) (14).csv"
+file_path = "Contact (res.partner) (14).csv"
 
 # Зчитуємо DataFrame з файлу
 df = pd.read_csv(file_path)
