@@ -1,6 +1,6 @@
 import csv
 
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/images/1-80-companies.csv"
+input_file_path = "1-80-companies.csv"
 
 
 def print_image_lengths(input_file_path):
