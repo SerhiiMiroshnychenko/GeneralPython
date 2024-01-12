@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Зчитування файлів
-file1 = "/home/smiroshnychenko/Runex3/data/earlier/res.partner.csv"
-file2 = "/home/smiroshnychenko/Runex3/data/earlier/Contact (res.partner) (5).csv"
+file1 = "res.partner.csv"
+file2 = "Contact (res.partner) (5).csv"
 
 
 df1 = pd.read_csv(file1)
@@ -30,7 +30,7 @@ for index1, row1 in df1.iterrows():
 result_df = pd.DataFrame(res, columns=['old_id', 'new_id'])
 
 # Запис результатів у файл result.csv
-result_df.to_csv('/home/smiroshnychenko/Runex3/data/earlier/result_2.csv', index=False)
+result_df.to_csv('result_2.csv', index=False)
 
 # Виведення результатів
 print(len(result))
