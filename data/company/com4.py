@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Шляхи до файлів
-file_path1 = "/home/smiroshnychenko/Runex3/data/company/Contact (res.partner) (14).csv"
-file_path2 = "/home/smiroshnychenko/Runex3/data/company/res.partner (13).csv"
+file_path1 = "Contact (res.partner) (14).csv"
+file_path2 = "res.partner (13).csv"
 
 # Зчитуємо DataFrame з файлів
 df1 = pd.read_csv(file_path1)
@@ -19,6 +19,6 @@ result_df = pd.DataFrame({
 })
 
 # Записуємо результат у файл "com_map.csv"
-result_df.to_csv("/home/smiroshnychenko/Runex3/data/company/com_map.csv", index=False)
+result_df.to_csv("com_map.csv", index=False)
 
 print("Mapping file 'com_map.csv' has been created.")
