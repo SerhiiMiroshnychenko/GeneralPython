@@ -38,5 +38,5 @@ def find_duplicates(input_file, output_file):
 
 
 # Виклик функції з вказанням шляху до вхідного та вихідного файлів
-find_duplicates('/home/smiroshnychenko/Runex3/data/duplicates/data_files/Contact (res.partner) (9).csv',
-                '/home/smiroshnychenko/Runex3/data/duplicates/data_files/duplicates3.csv')
+find_duplicates('Contact (res.partner) (9).csv',
+                'duplicates3.csv')
