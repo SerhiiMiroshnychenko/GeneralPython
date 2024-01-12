@@ -19,8 +19,8 @@ def compare_and_count_matches(file1, file2):
 
 
 if __name__ == "__main__":
-    file1 = "/home/smiroshnychenko/Runex3/data/earlier/res.partner.csv"
-    file2 = "/home/smiroshnychenko/Runex3/data/earlier/Contact (res.partner) (5).csv"
+    file1 = "res.partner.csv"
+    file2 = "Contact (res.partner) (5).csv"
 
     matches_count = compare_and_count_matches(file1, file2)
 
