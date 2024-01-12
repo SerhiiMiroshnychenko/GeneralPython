@@ -1,8 +1,8 @@
 import base64
 import csv
 
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/images/1-80-companies.csv"
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/images/FilteredImages.csv"
+input_file_path = "1-80-companies.csv"
+output_file_path = "FilteredImages.csv"
 
 
 def is_base64(encoded_data):
