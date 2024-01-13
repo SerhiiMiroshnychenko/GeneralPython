@@ -36,5 +36,5 @@ def find_name_duplicates(input_file, output_file):
 
 
 # Виклик функції з вказанням шляху до вхідного та вихідного файлів
-find_name_duplicates('/home/smiroshnychenko/Runex3/data/duplicates/data_files/Contact (res.partner) (9).csv',
-                     '/home/smiroshnychenko/Runex3/data/duplicates/data_files/name_duplicates.csv')
+find_name_duplicates('Contact (res.partner) (9).csv',
+                     'name_duplicates.csv')
