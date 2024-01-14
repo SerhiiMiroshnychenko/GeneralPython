@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Зчитуємо дані з файлу dname_email_city_create.csv
-file_path = "/home/smiroshnychenko/Runex3/data/duplicates/data_files/dname_email_city_create.csv"
+file_path = "dname_email_city_create.csv"
 df = pd.read_csv(file_path)
 
 # Знаходимо дублікати за полями "Display Name", "Email", "City"
@@ -26,4 +26,4 @@ for (name, email, city), group_df in duplicates_df.groupby(["Display Name", "Ema
     dupll_df = pd.concat([dupll_df, pd.DataFrame([row_data])], ignore_index=True)
 
 # Записуємо результат у файл dupll.csv
-dupll_df.to_csv("/home/smiroshnychenko/Runex3/data/duplicates/data_files/dupll.csv", index=False)
+dupll_df.to_csv("dupll.csv", index=False)
