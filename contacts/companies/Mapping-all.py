@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до файлу Excel
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/c1-2000.xlsx"
+input_file_path = "c1-2000.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(input_file_path)
@@ -26,5 +26,5 @@ def replace_user_id(value):
 df['user_id/id'] = df['user_id/id'].apply(replace_user_id)
 
 # Записуємо змінений DataFrame назад у файл Excel
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/cc1-2000.xlsx"
+output_file_path = "cc1-2000.xlsx"
 df.to_excel(output_file_path, index=False)
