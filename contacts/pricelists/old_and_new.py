@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Шляхи до файлів
-file1_path = '/home/smiroshnychenko/GeneralPython/contacts/pricelists/res.partner (24).csv'
-file2_path = '/home/smiroshnychenko/GeneralPython/contacts/pricelists/Contact (res.partner) (15).csv'
+file1_path = 'res.partner (24).csv'
+file2_path = 'Contact (res.partner) (15).csv'
 
 # Зчитуємо файли у DataFrame
 df1 = pd.read_csv(file1_path)
@@ -18,5 +18,5 @@ matching_rows = merged_df.dropna(subset=['name_file2'])
 non_matching_rows = merged_df[merged_df['name_file2'].isna()]
 
 # Записуємо результат у файли
-matching_rows[['id', 'partner_product_pricelist/id', 'name_file1']].to_csv('/home/smiroshnychenko/GeneralPython/contacts/pricelists/old_id.csv', index=False)
-non_matching_rows[['id', 'partner_product_pricelist/id', 'name_file1']].to_csv('/home/smiroshnychenko/GeneralPython/contacts/pricelists/new_id.csv', index=False)
+matching_rows[['id', 'partner_product_pricelist/id', 'name_file1']].to_csv('old_id.csv', index=False)
+non_matching_rows[['id', 'partner_product_pricelist/id', 'name_file1']].to_csv('new_id.csv', index=False)
