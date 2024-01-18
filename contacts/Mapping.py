@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до файлу Excel
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/1-2000.xlsx"
+input_file_path = "1-2000.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(input_file_path)
@@ -110,5 +110,5 @@ def replace_type_id(value):
 df['type'] = df['type'].apply(replace_type_id)
 
 # Записуємо змінений DataFrame назад у файл Excel
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/c1-2000.xlsx"
+output_file_path = "c1-2000.xlsx"
 df.to_excel(output_file_path, index=False)
