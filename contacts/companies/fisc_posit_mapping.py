@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до файлу Excel
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/companies/COMPANIES-2.xlsx"
+input_file_path = "COMPANIES-2.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(input_file_path)
@@ -23,5 +23,5 @@ def replace_fp_id(value):
 df['property_account_position/id'] = df['property_account_position/id'].apply(replace_fp_id)
 
 # Записуємо змінений DataFrame назад у файл Excel
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/companies/COMPANIES-3.xlsx"
+output_file_path = "COMPANIES-3.xlsx"
 df.to_excel(output_file_path, index=False)
