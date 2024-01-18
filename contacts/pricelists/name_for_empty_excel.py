@@ -1,7 +1,7 @@
 import openpyxl
 
 # Шлях до Excel-файлу
-excel_path = '/home/smiroshnychenko/GeneralPython/contacts/pricelists/all_sales_pricelists.xlsx'
+excel_path = 'all_sales_pricelists.xlsx'
 
 # Відкриваємо Excel-файл
 workbook = openpyxl.load_workbook(excel_path)
