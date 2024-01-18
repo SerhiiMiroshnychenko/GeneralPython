@@ -4,7 +4,7 @@ import pandas as pd
 USER_ID
 """
 # Шлях до файлу Excel
-file_path_start = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/10001-10462.xlsx"
+file_path_start = "10001-10462.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(file_path_start)
@@ -30,7 +30,7 @@ def replace_user_id(value):
 df['user_id/id'] = df['user_id/id'].apply(replace_user_id)
 
 # Записуємо змінений DataFrame назад у файл Excel
-file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/result-10001-10462.xlsx"
+file_path = "result-10001-10462.xlsx"
 df.to_excel(file_path, index=False)
 print('USER_ID')
 
@@ -215,12 +215,12 @@ def replace_section(value):
 
 df['section_id/id'] = df['section_id/id'].apply(replace_section)
 
-file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/result-1-2000.xlsx"
+file_path = "result-1-2000.xlsx"
 df.to_excel(file_path, index=False)
 print('SECTION_ID')
 
 # Шлях до файлу Excel
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/result-10001-10462.xlsx"
+input_file_path = "result-10001-10462.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(input_file_path)
@@ -229,11 +229,11 @@ df = pd.read_excel(input_file_path)
 df.replace(False, '', inplace=True)
 
 # Записуємо змінений DataFrame назад у файл Excel
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/result-10001-10462-updated.xlsx"
+output_file_path = "result-10001-10462-updated.xlsx"
 df.to_excel(output_file_path, index=False)
 
 # Шлях до файлу Excel
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/result-10001-10462-updated.xlsx"
+input_file_path = "result-10001-10462-updated.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(input_file_path)
@@ -242,7 +242,7 @@ df = pd.read_excel(input_file_path)
 df.dropna(subset=['id'], inplace=True)
 
 # Записуємо змінений DataFrame назад у файл Excel
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/all_contacts_non_companies/result-10001-10462-updated-2.xlsx"
+output_file_path = "result-10001-10462-updated-2.xlsx"
 df.to_excel(output_file_path, index=False)
 
 print('\nFINISH')
