@@ -2,8 +2,8 @@ import csv
 import base64
 
 # Шлях до вихідного CSV-файлу та шлях до файлу для зберігання результатів
-input_csv_path = '/home/smiroshnychenko/GeneralPython/contacts/images/Images.csv'
-output_csv_path = '/home/smiroshnychenko/GeneralPython/contacts/images/Images_base64.csv'
+input_csv_path = 'Images.csv'
+output_csv_path = 'Images_base64.csv'
 
 
 def encode_image_data(input_data):
