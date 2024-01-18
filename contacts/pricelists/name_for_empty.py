@@ -1,7 +1,7 @@
 import csv
 
 # Шлях до CSV-файлу
-csv_path = '/home/smiroshnychenko/GeneralPython/contacts/pricelists/all_pl.csv'
+csv_path = 'all_pl.csv'
 
 # Відкриваємо CSV-файл
 with open(csv_path, 'r') as csv_file:
