@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до файлу Excel
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/companies/COMPANIES-3.xlsx"
+input_file_path = "COMPANIES-3.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(input_file_path)
@@ -32,5 +32,5 @@ df['property_payment_term/id'] = df['property_payment_term/id'].apply(replace_pt
 df['property_supplier_payment_term/id'] = df['property_supplier_payment_term/id'].apply(replace_pt_id)
 
 # Записуємо змінений DataFrame назад у файл Excel
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/companies/COMPANIES-4.xlsx"
+output_file_path = "COMPANIES-4.xlsx"
 df.to_excel(output_file_path, index=False)
