@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до файлу Excel
-excel_file_path = "/home/smiroshnychenko/GeneralPython/contacts/companies/COMPANIES-1.xlsx"
+excel_file_path = "COMPANIES-1.xlsx"
 
 # Зчитуємо дані з Excel
 df = pd.read_excel(excel_file_path)
@@ -23,4 +23,4 @@ def generate_category(row):
 df['category_id/id'] = df.apply(generate_category, axis=1)
 
 # Записуємо змінений DataFrame назад у файл Excel
-df.to_excel("/home/smiroshnychenko/GeneralPython/contacts/companies/COMPANIES-2.xlsx", index=False)
+df.to_excel("COMPANIES-2.xlsx", index=False)
