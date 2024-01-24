@@ -1,7 +1,7 @@
 import csv
 
-input_file_path = "/home/smiroshnychenko/GeneralPython/contacts/images/Contact_Images.csv"
-output_file_path = "/home/smiroshnychenko/GeneralPython/contacts/images/preparedImages2.csv"
+input_file_path = "Contact_Images.csv"
+output_file_path = "preparedImages2.csv"
 
 
 def filter_images_by_length_and_presence(input_file_path, output_file_path, max_length=20000):
