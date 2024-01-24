@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Шлях до CSV-файлу
-csv_path = '/home/smiroshnychenko/GeneralPython/contacts/pricelists/res.partner (24).csv'
+csv_path = 'res.partner (24).csv'
 
 # Зчитуємо CSV-файл у DataFrame
 df = pd.read_csv(csv_path)
