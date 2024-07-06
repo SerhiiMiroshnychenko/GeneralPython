@@ -3,7 +3,8 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
-url = 'https://www.amazon.com/Odoo-Development-Cookbook-effective-applications/product-reviews/1805124277/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews'
+url = ('https://www.amazon.com/Odoo-Development-Cookbook-effective-applications/product-reviews/1805124277/ref'
+       '=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews')
 page = None
 try:
     page = requests.get(url)  # this might throw an exception if something goes wrong.
