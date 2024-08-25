@@ -32,12 +32,17 @@ def move_down():
     t.forward(20)  # Рухаємось вперед на 20 пікселів
 
 
+def exit_program():
+    wn.bye()  # Закриває вікно turtle
+
+
 # Призначення клавіш-стрілок для функцій
 wn.listen()
 wn.onkey(move_right, "Right")
 wn.onkey(move_left, "Left")
 wn.onkey(move_up, "Up")
 wn.onkey(move_down, "Down")
+wn.onkey(exit_program, "Escape")  # Вихід з програми при натисканні клавіші "Escape"
 
 # Основний цикл програми
 wn.mainloop()
